@@ -8,8 +8,18 @@
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-  <div class="container">
+  <div id="setup" class="container">
+    <h1>🧠 Welcome to the Quiz!</h1>
+    <input id="username" placeholder="Enter your name" />
+    <input id="question-count" type="number" min="1" value="5" />
+    <button id="start-btn">Start Quiz</button>
+    <h2>Leaderboard</h2>
+    <table id="leaderboard"></table>
+  </div>
+
+  <div id="quiz" class="container" style="display:none;">
     <h1>🧠 What is this?</h1>
+    <h2 id="category"></h2>
     <img id="quiz-image" src="" alt="Quiz Item" />
     <div id="options" class="options"></div>
     <p id="feedback"></p>
