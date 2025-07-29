@@ -8,8 +8,18 @@
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-  <div class="container">
+  <div id="login-screen" class="container">
+    <h1>Qualifying Quibbling Quiz</h1>
+    <input id="name-input" placeholder="Your name" />
+    <input id="minutes-input" type="number" min="1" value="1" />
+    <button id="start-btn">Start Quiz</button>
+  </div>
+
+  <div id="quiz-screen" class="container hidden">
+    <p id="timer"></p>
     <h1>🧠 What is this?</h1>
+    <label for="category-select">Category:</label>
+    <select id="category-select"></select>
     <img id="quiz-image" src="" alt="Quiz Item" />
     <div id="options" class="options"></div>
     <p id="feedback"></p>
