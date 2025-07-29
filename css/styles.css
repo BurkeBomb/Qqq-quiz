@@ -38,3 +38,10 @@ button {
 button:hover {
   background-color: #c40061;
 }
+
+select {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  font-size: 1rem;
+}
