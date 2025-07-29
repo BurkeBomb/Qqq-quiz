@@ -1,25 +1,25 @@
 
 const quizData = [
   {
-    image: "public/images/spanner.jpg",
+    image: "images/spanner.jpg",
     correct: "Spanner",
     category: "Tools",
     options: ["Spanner", "Wrench", "Tweezer", "Hammer"]
   },
   {
-    image: "public/images/tampon.jpg",
+    image: "images/tampon.jpg",
     correct: "Tampon",
     category: "Health",
     options: ["Tampon", "Lipstick", "Marker", "Eraser"]
   },
   {
-    image: "public/images/lashes.jpg",
+    image: "images/lashes.jpg",
     correct: "False Eyelashes",
     category: "Beauty",
     options: ["False Eyelashes", "Caterpillars", "Hair Extension", "Brush"]
   },
   {
-    image: "public/images/diaper.jpg",
+    image: "images/diaper.jpg",
     correct: "Diaper",
     category: "Baby",
     options: ["Diaper", "Bib", "Towel", "Bandage"]
