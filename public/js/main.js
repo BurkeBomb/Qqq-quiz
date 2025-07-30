@@ -126,6 +126,19 @@ document.getElementById("start-btn").addEventListener("click", () => {
   startTimer(mins);
 });
 
+document.getElementById("link-btn").addEventListener("click", () => {
+  const name = document.getElementById("name-input").value.trim();
+  const mins = document.getElementById("minutes-input").value;
+  const url = `${location.origin}${location.pathname}?name=${encodeURIComponent(name)}&time=${encodeURIComponent(mins)}`;
+  const out = document.getElementById("link-output");
+  out.value = url;
+  navigator.clipboard.writeText(url).catch(() => {});
+});
+
 document.addEventListener("DOMContentLoaded", () => {
-  // nothing here yet
+  const params = new URLSearchParams(location.search);
+  const name = params.get("name");
+  const time = params.get("time");
+  if (name) document.getElementById("name-input").value = name;
+  if (time) document.getElementById("minutes-input").value = time;
 });

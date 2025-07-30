@@ -63,3 +63,8 @@ select {
   border-radius: 10px;
   font-size: 1rem;
 }
+
+#link-output {
+  width: 100%;
+  margin-bottom: 1rem;
+}
